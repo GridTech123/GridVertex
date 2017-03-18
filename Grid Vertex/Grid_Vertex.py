@@ -28,3 +28,7 @@ def app():
     pickle_in = open('gridVertexApp.gv', 'r')
     return(pickle.load(pickle_in))
     os.chdir(dir)
+
+def setDir(path):
+    global dir
+    dir(path)
